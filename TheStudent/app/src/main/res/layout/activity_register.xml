@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="32dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    tools:context=".RegisterActivity">
+
+<ImageView
+android:id="@+id/img_registasi"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+android:layout_marginEnd="10dp"
+android:src="@drawable/registrasiatas" />
+
+<EditText
+android:id="@+id/fullname"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:hint="Nama Lengkap"
+    android:inputType="textPersonName" />
+
+<EditText
+android:id="@+id/username"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:hint="Username"
+    android:inputType="text" />
+
+<EditText
+android:id="@+id/password"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:hint="Kata Sandi"
+    android:inputType="textPassword" />
+
+<EditText
+android:id="@+id/email"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:hint="Email"
+    android:inputType="textEmailAddress" />
+
+<Spinner
+android:id="@+id/gender"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:entries="@array/string_gender"
+    android:hint="Jenis Kelamin" />
+
+<EditText
+android:id="@+id/birthdate"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:focusable="false"
+    android:hint="Tanggal Lahir" />
+
+<Spinner
+android:id="@+id/religion"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:entries="@array/string_religion"
+    android:hint="Agama" />
+
+<EditText
+android:id="@+id/address"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Alamat"
+android:layout_marginTop="8dp"
+android:inputType="textMultiLine"
+android:lines="3"/>
+
+<ImageButton
+android:id="@+id/submit_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_marginEnd="8dp"
+android:src="@drawable/btn_register" />
+
+    <ImageButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/sudahpunyaakun" />
+</LinearLayout>
