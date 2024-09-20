@@ -5,4 +5,5 @@ window.onscroll = function() {
     } else {
         navbar.classList.remove("navbar-small");
     }
+
 };

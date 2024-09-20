@@ -1,0 +1,77 @@
+body {
+    background-color: #E0F7FA; /* Biru muda */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: #B4D4FF; /* Warna navbar */
+    text-align: center;
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 1rem 0; /* Tinggi navbar awal */
+    transition: padding 0.3s ease; /* Animasi transisi */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Pusatkan logo */
+}
+
+.navbar-logo {
+    width: 100px; /* Ukuran logo */
+    height: auto; /* Menjaga rasio aspek */
+    transition: height 0.3s ease; /* Animasi transisi untuk logo */
+}
+
+.nav-link {
+    transition: color 0.3s, padding 0.3s; /* Transisi untuk warna dan padding */
+    padding: 0.5rem 1rem; /* Padding untuk tautan */
+}
+
+.nav-link:hover {
+    color: #53A6D7; /* Warna saat hover */
+    text-decoration: double; /* Garis bawah saat hover */
+}
+
+.footer {
+    background-color: #B4D4FF; /* Warna footer */
+}
+
+.footer-link {
+    transition: 0.3s;
+    color: #2C3E50;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #53A6D7; /* Warna saat hover */
+    text-decoration: double; /* Garis bawah saat hover */
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem; /* Jarak antar elemen */
+}
+
+h2, h3 {
+    color: #2C3E50; /* Warna judul */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify; /* Rata kanan kiri */
+    margin-bottom: 20px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 10px;
+}

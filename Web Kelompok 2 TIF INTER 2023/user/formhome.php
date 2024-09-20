@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#">Katalog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formregister.php">Register</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
                 </ul>
             </div>
@@ -33,14 +33,14 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="image/bromo4.jpg" class="d-block img-fluid" alt="Gunung Bromo">
+                    <img src="image/bromo4.jpg" class="d-block img-fluid" alt="Gunung Bromo" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Gunung Bromo</h5>
                         <h6>Keindahan alam yang menakjubkan di Jawa Timur.</h6>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://images4.alphacoders.com/104/thumb-1920-1046944.jpg" class="d-block img-fluid" alt="Sunrise Bromo">
+                    <img src="https://images4.alphacoders.com/104/thumb-1920-1046944.jpg" class="d-block img-fluid" alt="Sunrise Bromo" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Sunrise Bromo</h5>
                         <h6>Menikmati matahari terbit dari Bromo</h6>
@@ -69,14 +69,14 @@
                 <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="image/jeepbromo.png" class="d-block img-fluid" alt="Gunung Bromo">
+                            <img src="image/jeepbromo.png" class="d-block img-fluid" alt="Gunung Bromo" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>WandeLust</h5>
                                 <h6>Jasa Penyewaan Jeep WandeLust</h6>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="image/pengalaman_wisata_bromo.png" class="d-block img-fluid" alt="Wanderlust">
+                            <img src="image/pengalaman_wisata_bromo.png" class="d-block img-fluid" alt="Wanderlust" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>WandeLust</h5>
                                 <h6>Jasa Fotografer WandeLust</h6>
@@ -107,19 +107,19 @@
             <div class="container py-5">
                 <div class="row gallery">
                     <div class="col-md-4 col-sm-6 mb-4">
-                        <img src="https://javaadventuretrail.com/wp-content/uploads/2015/11/mount-bromo-tour.jpg" class="img-fluid rounded shadow" alt="Sunrise Bromo">
+                        <img src="https://javaadventuretrail.com/wp-content/uploads/2015/11/mount-bromo-tour.jpg" class="img-fluid rounded shadow" alt="Sunrise Bromo" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                     </div>
                     <div class="col-md-4 col-sm-6 mb-4">
-                        <img src="https://www.letsescapetogether.com/wp-content/uploads/2022/10/MountBromosunriseslider-2.jpg" class="img-fluid rounded shadow" alt="Bromo date">
+                        <img src="https://www.letsescapetogether.com/wp-content/uploads/2022/10/MountBromosunriseslider-2.jpg" class="img-fluid rounded shadow" alt="Bromo date" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                     </div>
                     <div class="col-md-4 col-sm-6 mb-4">
-                        <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revision-2019/all-revision-destination/bromo22.jpg" class="img-fluid rounded shadow" alt="Bromo 3">
+                        <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revision-2019/all-revision-destination/bromo22.jpg" class="img-fluid rounded shadow" alt="Bromo 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                     </div>
                     <div class="col-md-4 col-sm-6 mb-4">
-                        <img src="https://4.bp.blogspot.com/-IGG1EW39MTA/VkAx8tll1jI/AAAAAAAABmY/IaZJbFFjXMoq5sSEt0TqWGcntmcyg2Wdw/s1600/kawah_bromo.jpg" class="img-fluid rounded shadow" alt="Kawah Bromo">
+                        <img src="https://4.bp.blogspot.com/-IGG1EW39MTA/VkAx8tll1jI/AAAAAAAABmY/IaZJbFFjXMoq5sSEt0TqWGcntmcyg2Wdw/s1600/kawah_bromo.jpg" class="img-fluid rounded shadow" alt="Kawah Bromo" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                     </div>
                     <div class="col-md-4 col-sm-6 mb-4">
-                        <img src="https://melampa.com/wp-content/uploads/2019/09/Bromo-Jeep-Tour-Melampa-Tour-Indonesia.jpg" class="img-fluid rounded shadow" alt="Kawah Bromo">
+                        <img src="https://melampa.com/wp-content/uploads/2019/09/Bromo-Jeep-Tour-Melampa-Tour-Indonesia.jpg" class="img-fluid rounded shadow" alt="Kawah Bromo" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                     </div>
                 </div>
             </div>
@@ -157,8 +157,24 @@
                 </div>
             </footer>
 
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">WandeLust</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="modalImage" src="" class="img-fluid" alt="Gambar Besar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
             <script src="js/nav.js"></script>
+            <script src="js/image.js"> </script>
 </body>
 
 </html>
