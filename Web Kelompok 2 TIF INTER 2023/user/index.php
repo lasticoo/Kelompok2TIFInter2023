@@ -51,16 +51,16 @@
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://source.unsplash.com/1600x900/?gunung-bromo" class="d-block w-100" alt="Gunung Bromo">
+                <img src="image/bromo1.png" class="d-block w-100" alt="Gunung Bromo">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Gunung Bromo</h5>
                     <p>Keindahan alam yang menakjubkan di Jawa Timur.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/1600x900/?bali" class="d-block w-100" alt="Wisata di Bali">
+                <img src="image/bromo2.png" class="d-block w-100" alt="Wisata di Bali">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Wisata di Bali</h5>
+                    <h5>Gunung Bromo</h5>
                     <p>Menikmati keindahan pantai dan budaya yang kaya.</p>
                 </div>
             </div>
