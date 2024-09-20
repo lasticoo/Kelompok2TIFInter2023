@@ -45,7 +45,7 @@ body {
 
 .nav-link:hover {
     color: #53A6D7; /* Warna saat hover */
-    text-decoration: underline; /* Garis bawah saat hover */
+    text-decoration: double; /* Garis bawah saat hover */
 }
 
 .carousel-item img {
@@ -77,7 +77,7 @@ body {
 
 .footer-link:hover {
     color: #53A6D7; /* Warna saat hover */
-    text-decoration: underline; /* Garis bawah saat hover */
+    text-decoration: double; /* Garis bawah saat hover */
 }
 
 .mb-4 {
