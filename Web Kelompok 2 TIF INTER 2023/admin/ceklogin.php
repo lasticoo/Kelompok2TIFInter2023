@@ -17,6 +17,7 @@ if ($cek > 0){
     $_SESSION['namaadmin'] = $r['nama_admin'];
     $_SESSION['username'] = $r['username'];
     $_SESSION['password'] = $r['password'];
+    $_SESSION['idadmin']  = $r['id_admin'];
 
     
     if(!empty($_POST["remember"])){
@@ -28,7 +29,7 @@ if ($cek > 0){
         setcookie("password", "", time() - 3600, "/");
     }
 
-    header("location:dashboard.php");
+    header("location:dashboard.php?hal=home");
 
 }else{
     header("location:gagal_login.php");

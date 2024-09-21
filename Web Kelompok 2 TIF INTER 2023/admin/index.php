@@ -25,7 +25,7 @@ echo '
         
         body {
            
-            background-image: url("image/login.png");
+            background-image: url("image/homepage.png");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;

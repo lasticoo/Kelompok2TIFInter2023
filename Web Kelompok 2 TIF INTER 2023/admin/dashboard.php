@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once "koneksi.php";
 date_default_timezone_set('Asia/Jakarta');
 
 if(empty($_SESSION['username']) and empty($_SESSION['password'])) {
@@ -46,29 +47,38 @@ if(empty($_SESSION['username']) and empty($_SESSION['password'])) {
             }
             
             .nav-pills {
-                    background-color: #FFAF00;
-                    color: white;
-            }
-                    .nav-pills .nav-link {
-                                color: #ffffff; 
-                                border-radius: 0; 
-    }
-    .nav-pills .nav-link.active {
-        background-color: #007bff; /* Active link background */
-        color: #ffffff; /* White text for active link */
-    }
+    background-color: #FFAF00; /* Background untuk sidebar */
+    color: white;
+    min-height: 100vh; /* Membuat sidebar memanjang sampai bawah */
+    padding-top: 20px; /* Tambah jarak atas */
+}
 
-    /* Hover effect for links */
-    .nav-pills .nav-link:hover {
-        background-color: #495057; /* Slightly lighter on hover */
-        color: #ffffff; /* White text on hover */
-       
+.nav-pills .nav-link {
+    color: #ffffff; 
+    border-radius: 2px; 
+}
 
-    }
-    col-lg-2.position-fixed {
+.nav-pills .nav-link.active {
+    background-color: #007bff; /* Warna background link aktif */
+    color: #ffffff; /* Warna teks untuk link aktif */
+}
+
+
+.nav-pills .nav-link:hover {
+    background-color: #495057; 
+    color: #ffffff;
+}
+
+
+.col-lg-2.position-fixed {
+    position: fixed;
+    top: 50%; 
     left: 0; 
-    width: 16.6667%; 
-    padding: 0; 
+    width: 17%;
+    height: 200vh; /* Pastikan sidebar memanjang seluruh layar */
+    padding: 40px; 
+    background-color: #FFAF00; /* Background untuk sidebar */
+    z-index: 1000;
 }
 
     
@@ -98,7 +108,7 @@ if(empty($_SESSION['username']) and empty($_SESSION['password'])) {
         </div>
                     </a></li>
 
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Setting</a></li>
+                    <li><a class="dropdown-item" href="dashboard.php?hal=user"><i class="bi bi-gear"></i>Setting</a></li>
                     <li><a class="dropdown-item" href="logout.php" onclick="return confirm('Apakah anda yakin ingin keluar dari aplikasi?')">
                         <img src="image/logout(1).png">Logout</a></li>
                 </ul>
@@ -107,7 +117,7 @@ if(empty($_SESSION['username']) and empty($_SESSION['password'])) {
             </div>
         </div>
         <div class="row mt-4">
-    <div class="col-lg-2 position-fixed vh-100" style="left: 0; top: 0; padding: 0; background-color: #343a40;">
+    <div class="col-lg-2 position-fixed vh-100" style="left: 0; top: 54px; padding: 0;">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link <?php echo (isset($_GET['hal']) && $_GET['hal'] == 'home' ? "active" : "") ?>" href="dashboard.php?hal=home">Home</a>
             <a class="nav-link <?php echo (isset($_GET['hal']) && $_GET['hal'] == 'profile' ? "active" : "") ?>" href="dashboard.php?hal=profile">Profile</a>
@@ -122,8 +132,44 @@ if(empty($_SESSION['username']) and empty($_SESSION['password'])) {
 
 
             <div class="col-lg-10 offset-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit, sequi dolorum fugiat nam ratione beatae nobis iste eum veniam tenetur voluptatem pariatur corporis obcaecati, quaerat quibusdam cumque, commodi eveniet?
-               
+
+             <?php
+              
+              if(isset($_GET['hal'])){
+
+                switch($_GET['hal']) {
+                    case 'home'; 
+                    include "modul/mod_home/home.php";
+                    break;
+                    case 'profile':
+                        include "modul/mod_profile/profile.php";
+                    break;
+                    case 'galeri':
+                        include "modul/mod_galeri/galeri.php";
+                        break;
+                    case 'destinasi-wisata':
+                        include "modul/mod_wisata/wisata.php";
+                        break;
+                    case 'kategori':
+                        include "modul/mod_kategori/kategori.php";
+                        break;
+                    case 'berita':
+                        include "modul/mod_berita/berita.php";
+                        break;
+                    case 'user':
+                        include "modul/mod_user/user.php";
+                        break;
+                        default:
+                        echo "<h1>Halaman Tidak Ditemukan</h1>";
+                
+                }
+              }else{
+                header("location:dashboard.php?hal=home");
+              }
+             
+
+
+             ?>
             </div>   
         </div>
 
